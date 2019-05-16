@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<Services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Service>
+    <Id>001</Id>
+	<Name>Glebe Garage Duloe</Name> 
+    <Description>For all your car servicing + repairs</Description> 
+    <Telephone>07979022798 or 07851199817</Telephone> 
+    <Link></Link> 
+  </Service>
+	<Service>
+		<Id>001</Id>
+		<Name>T Taxis</Name>
+		<Description>5 seaters for local and airport drops</Description>
+		<Telephone>01503 263555</Telephone>
+		<Link></Link>
+	</Service>
+	<Service>
+		<Id>001</Id>
+		<Name>Duloe Community Shop</Name>
+		<Description>Newspapers, Bread Milk, Local produce</Description>
+		<Telephone>01503 264022</Telephone>
+		<Link></Link>
+	</Service>
+	<Service>
+		<Id>001</Id>
+		<Name>Cornish Orchards</Name>
+		<Description>quality hand crafted apple juices and ciders</Description>
+		<Telephone>01503 269007</Telephone>
+		<Link>http://www.cornishorchards.co.uk</Link>
+	</Service>
+	<Service>
+		<Id>001</Id>
+		<Name>Purely Cornish</Name>
+		<Description>Cornish Hampers' and 'Cornish Gifts'</Description>
+		<Telephone>01503 262680</Telephone>
+		<Link>http://www.purelycornish.co.uk</Link>
+	</Service>
+	<Service>
+		<Id>001</Id>
+		<Name>Coast 2 Coast</Name>
+		<Description>Estate Land and Letting Agents</Description>
+		<Telephone>01503 241241</Telephone>
+		<Link>http://www.coast2coastproperty.co.uk</Link>
+	</Service>
+	<Service>
+		<Id>001</Id>
+		<Name>Active-8</Name>
+		<Description>Cornwall activities available for all</Description>
+		<Telephone>01579 320848</Telephone>
+		<Link>http://www.activecornwall.co.uk</Link>
+	</Service>
+		<Service>
+		<Id>001</Id>
+		<Name>Cheap Car Parking Bristol Airport</Name>
+		<Description>Home Farm Car Parking great rates only 5 minutes from airport</Description>
+		<Telephone>01275 463687</Telephone>
+		<Link></Link>
+	</Service>
+  <Service>
+    <Id>001</Id>
+    <Name>Driving Instructor</Name>
+    <Description>Pete Kennard ADI DSA approved Driving Instructor</Description>
+    <Telephone>07858 321 322</Telephone>
+    <Link>http://www.petekennard.co.uk</Link>
+  </Service>
+  <Service>
+    <Id>001</Id>
+    <Name>Animal Feed from Trewen Farm</Name>
+    <Description>cut out the middleman buy straight from the farm for more info call Andrew</Description>
+    <Telephone>01503 220565</Telephone>
+    <Link></Link>
+  </Service>
+  <Service>
+    <Id>001</Id>
+    <Name>Easy Go Plumbing</Name>
+    <Description>Small local plumbing and drainage company please call Jack on</Description>
+    <Telephone>01503 240608</Telephone>
+    <Link></Link>
+  </Service>
+  <Service>
+    <Id>001</Id>
+    <Name>MS Builders</Name>
+    <Description>
+      For all your building requirements No Job to Big or small free
+      no obligation quotes
+    </Description>
+    <Telephone>01503 265217 or 07825818140</Telephone>
+    <Link></Link>
+  </Service>
+  <Service>
+    <Id>001</Id>
+    <Name>The Cornish Collection</Name>
+    <Description>
+      Cornish Collection is a long established holiday letting agency specialising solely in Looe holiday accommodation
+    </Description>
+    <Telephone>01503 262736</Telephone>
+    <Link>http://www.cornishcollection.co.uk/</Link>
+  </Service>
+</Services>

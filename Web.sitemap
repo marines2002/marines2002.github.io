@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="/" title=""  description=""  roles="*">
+    <siteMapNode url="default.aspx" title="Home"  description="Welcome page"  />
+    <siteMapNode url="gallery.aspx" title="Gallery"  description="Photo album"  />
+    <siteMapNode url="visitors.aspx" title="Visitors"  description="Useful Info for visitors to Duloe"  />
+    <siteMapNode url="directory.aspx" title="Directory"  description="Local Directory" />
+    <siteMapNode url="services.aspx" title="Services"  description="Local Services"/>
+    <siteMapNode url="clubs.aspx" title="Clubs"  description="clubs in the village"  />
+  </siteMapNode>
+</siteMap>

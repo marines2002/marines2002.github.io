@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<title>Welcome</title>
+	<style type="text/css">
+
+		body {
+			font-family: verdana;
+			font-size:8pt;
+			line-height:12pt;
+			margin:30px;
+			}
+
+		h1 {
+			font-size:14pt;
+			font-weight:bold;
+			}
+
+		h2 {
+			font-size:10pt;
+			font-weight:bold;
+			}
+
+		h3 {
+			font-size:8pt;
+			font-weight:bold;
+		}
+
+		table {
+			border-collapse:collapse;
+		}
+
+		td, th {
+			font-size:8pt;
+			border:1px solid black;
+			padding: 10px;
+		}
+
+		th {
+			text-align:left;
+		}
+
+		.warning {
+			color:red;
+			font-size:8pt;
+			font-style:italic;
+		}
+
+		.tip {
+			font-style:italic;
+		}
+
+		ol {
+			margin-top:1.2em;
+			margin-bottom:1.2em;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Club Site Starter Kit</h1>
+	<p>
+		Welcome to your new <strong>Club Site</strong> sample application. The key features are:</p>
+	<ul>
+		<li><strong>News.</strong> Announce news to your club.</li>
+		<li><strong>Events.</strong> Keep everyone up to date on what’s happening.</li>
+		<li><strong>Photos.</strong> Share photos and associate them with news items.</li>
+	</ul>
+	<p>
+		This site is ready to run! No changes are needed. Press CTRL+F5 to run the site.</p>
+
+	<hr />
+
+	<h2>Site Members and Roles</h2>
+	<p>
+		Your Starter Kit Web site allows visitors to register as members and then log in.
+		Members have specific privileges defined by roles such as administrator or guest.
+		Each Starter Kit Web site defines site-specific roles.
+		The following table describes what features are available to visitors in different roles.</p>
+	<table>
+		<tr>
+			<th>Visitor</th>
+			<th>Privileges</th>
+		</tr>
+		<tr>
+			<td>
+				Not logged in</td>
+			<td>May view all announcements, events, and public photos.</td>
+		</tr>
+		<tr>
+			<td>Logged in</td>
+			<td>May additionally browse the members directory, edit their own member directory information,
+				and view private photos.</td>
+		</tr>
+		<tr>
+			<td>Logged in as <strong>Administrators</strong></td>
+			<td>May additionally edit all announcements, events, photos, and member directory entries.</td>
+		</tr>
+	</table>
+	<p class="warning">
+		Important: Run the site before proceeding to automatically generate the site's predefined roles.</p>
+	<p>
+		Be sure to create a user name for yourself and assign yourself to a role (such as administrator) that can manage the site.</p>
+	<p>
+		Visitors can register by clicking the <strong>Register</strong> link.
+		New members are activated automatically, but are not assigned to any role.
+		You can manage users (for example, assign them to a role) using the ASP.NET Web Site Administration tool.
+		For details, see <a href="#AppendixA">Appendix A</a>.</p>
+
+	<hr />
+
+	<h2>Photos and Albums</h2>
+	<p>
+		The photo album enables you to:</p>
+	<ul>
+		<li>Create albums of photos for use in your site.</li>
+		<li>Upload photos to albums.</li>
+		<li>View the photos and albums.</li>
+	</ul>
+	<p class="tip">Tip: The Club Site enables you to publish news articles, events, photos and other items.
+		Photos can be associated with these items, but photos need to be stored in an album.
+		You may want to create a default album to hold the pictures for these articles.</p>
+	<h3>To create a photo album</h3>
+	<ol>
+		<li>Log in to the site as an administrator (member in the role <strong>Administrators</strong>).</li>
+		<li>In the navigation bar, click <strong>Photos</strong>.</li>
+		<li>Click <strong>Add New Album</strong>.</li>
+		<li>Enter a name such as "Site Photos" in the <strong>Album Name</strong> box.</li>
+		<li>If you don't want others to be able to see the album, check <strong>Album is private and non-visible to other users</strong>.</li>
+		<li>Click <strong>Add Album</strong>.</li>
+	</ol>
+	<h3>To upload a photo to an album</h3>
+	<ol>
+		<li>Log in to the site as a user who can see the album. (<strong>Administrators</strong> can see all albums.)</li>
+		<li>In the navigation bar, click <strong>Photos</strong>. </li>
+		<li>In the albums page, select the album to upload pictures to.</li>
+		<li>In the <strong>Upload Photo</strong> section, click <strong>Browse</strong> to select the image to upload.</li>
+		<li>Enter a title in the <strong>Image title</strong> box.</li>
+		<li>Click <strong>Upload</strong>. </li>
+		<li>Repeat steps 4 through 6 to upload additional photos.</li>
+	</ol>
+
+	<hr />
+
+	<h2>News Articles</h2>
+
+	<p>
+		The Club Site enables you to publish news articles for your club.
+		The articles are displayed on the home page and on the news list page. News articles can include content or act as links to other pages.</p>
+	<p>
+		You can associate a picture with an article.
+		The picture displays as a thumbnail in the article list and at the top of the article content.
+		The article can also point to a photo album for additional images.</p>
+	<h3>To create a news article</h3>
+	<ol>
+		<li>Log in to the site as an administrator (member in the role <strong>Administrators</strong>).</li>
+		<li>In the navigation bar, click <strong>News</strong>. </li>
+		<li>Click <strong>Add New Article</strong>. </li>
+		<li>Enter a title for the article.</li>
+		<li>Specify what type of article to create:
+			<ol type="a">
+				<li>To create an article with content, enter the content in the <strong>Description</strong>
+					text box.</li>
+				<li>To create a link, select <strong>Use a link instead of inline content for this article</strong>
+					and optionally enter a description that is displayed as a summary in the article list page.
+					The title is used as the link text.</li>
+			</ol>
+		</li>
+		<li>To delay publication, set the article date and time to be in the future.
+			By default, the date and time is set to the current time, so the article is available immediately.</li>
+		<li>To associate a photo with the article, do the following:
+			<ol type="a">
+				<li>Click <strong>Upload new image</strong>. </li>
+				<li>From the drop-down list, select the album to upload to.</li>
+				<li>Click <strong>Browse</strong> to select the image file.</li>
+				<li>Enter a title for the image.</li>
+				<li>Click <strong>Upload Image</strong>. </li>
+			</ol>
+			To select an existing image:
+			<ol type="a">
+				<li>Click <strong>Pick an existing image</strong>. </li>
+				<li>Select the album containing the image.</li>
+				<li>Select the photo from the album.</li>
+				<li>Click <strong>Use Selection</strong> to confirm the selection.</li>
+			</ol>
+		</li>
+		<li>If you want to use than one photo for an article, associate the article with a photo album.
+			Select an album from the list, or click <strong>New Album</strong>
+			to create a new album.
+			<p class="tip">Tip: If you create an album for the article, you can use one of the photos from the album as the photo for the article.
+				Create the album and upload the pictures you want to show.
+				Then click <strong>Pick an existing image</strong> and choose the album and one of the images to use as the thumbnail and article photo.</p></li>
+		<li>Click <strong>Save Article</strong>. The article is displayed in the news articles list.</li>
+	</ol>
+
+	<hr />
+
+	<h2>Events</h2>
+
+	<p>
+		The Club Site enables you to publish a calendar of events that are of interest to club members.
+		The events can be seen in a list or on a calendar.</p>
+	<p>
+		Events can be associated with a location that can include details such as directions and facility information.
+		The location is remembered so that it can be used for other events and doesn't need to be re-entered.</p>
+	<h3>To create an event</h3>
+	<ol>
+		<li>Log in to the site as an administrator (member in the role <strong>Administrators</strong>).</li>
+		<li>In the navigation bar, click <strong>Events</strong>. </li>
+		<li>Click <strong>Add New Event</strong>. </li>
+		<li>Enter a title for the event.</li>
+		<li>Specify what type of event to create:
+			<ol type="a">
+				<li>To create an event with content, enter the content in the <strong>Description</strong>
+					text box.</li>
+				<li>To create a link, select <strong>Use a link instead of inline content for this event</strong>
+					and optionally enter a description that is displayed as a summary.</li>
+			</ol>
+		</li>
+		<li>Set the start date and time of the event. If the event has a specific duration, you can also set the end date and time. If it does not have a specific duration, set the end time to be the same as the start time.</li>
+		<li>To associate a photo with the event, do the following:
+			<ol type="a">
+				<li>Click <strong>Upload new image</strong>. </li>
+				<li>From the drop-down list, select the album to upload to. </li>
+				<li>Click <strong>Browse</strong> to select the image file. </li>
+				<li>Enter a title for the image.</li>
+				<li>Click <strong>Upload Image</strong>. </li>
+			</ol>
+			To select an existing image:
+			<ol type="a">
+				<li>Click <strong>Pick an existing image</strong>. </li>
+				<li>Select the album containing the image.</li>
+				<li>Select the photo from the album.</li>
+				<li>Click <strong>Use Selection</strong> to confirm the selection.</li>
+			</ol>
+		</li>
+		<li>Click <strong>Save Event</strong>. The event is displayed in the events list.</li>
+	</ol>
+
+	<p>You can create a location while creating an event, or the event can be associated with an existing location.</p>
+
+	<h3>To create a location</h3>
+
+	<ol>
+		<li>Log in to the site as an administrator (member in the role <strong>Administrators</strong>).</li>
+		<li>In the navigation bar, click <strong>Locations</strong>. </li>
+		<li>Click <strong>Locations List</strong>. </li>
+		<li>Click <strong>Add new location</strong>. </li>
+		<li>Enter a name for the location.</li>
+		<li>Optionally fill in the following information for the location. Blank fields are not displayed when viewing the location.
+			<ul type="disc">
+				<li>Description – use for a description of the location.</li>
+				<li>Address – use for a physical address.</li>
+				<li>Directions – use to guide your members to the event.</li>
+			</ul>
+		</li>
+		<li>To associate a photo with the location, do the following:
+			<ol type="a">
+				<li>Click <strong>Upload new image</strong>. </li>
+				<li>From the drop-down list, select the album to upload to.</li>
+				<li>Click <strong>Browse</strong> to select the image file.</li>
+				<li>Enter a title for the image.</li>
+				<li>Click <strong>Upload Image</strong>. </li>
+			</ol>
+			To select an existing image:
+			<ol type="a">
+				<li>Click <strong>Pick an existing image</strong>. </li>
+				<li>Select the album containing the image.</li>
+				<li>Select the photo from the album.</li>
+				<li>Click <strong>Use Selection</strong> to confirm the selection.</li>
+			</ol>
+		</li>
+		<li>Click <strong>Save Location</strong>. The location is displayed in the location list.</li>
+	</ol>
+	<p class="tip">Tip: You can use the photo storage for a location to include a map to go with the directions.
+		Save the map from your favorite mapping software and upload it as the photo for the location.</p>
+
+	<hr />
+
+	<a name="AppendixA" />
+	<h2>Appendix A - Manually Managing Members and Roles</h2>
+	<p>
+		Your Starter Kit Web site allows visitors to register as members.
+		Members have specific privileges defined by a role you assign to them.
+		A special administrative role has rights to perform all functions in the site.</p>
+	<p class="tip">
+		Note: After creating your Starter Kit Web site, create an administrative user for yourself so you can manage the site.</p>
+	<p>
+		To create a user (member) manually:</p>
+	<ol>
+		<li>In the <strong>Website</strong> menu, click <strong>ASP.NET Configuration</strong>.
+		</li>
+		<li>Click the <strong>Security</strong> tab.</li>
+		<li>Click <strong>Create user</strong>. </li>
+		<li>In the <strong>Create User</strong> box, type a user name, password, and e-mail address for the member.
+			You must also provide a security question and answer that is used to help users recover their passwords, if necessary.</li>
+		<li>In the <strong>Roles</strong> box, select the check boxes corresponding to the roles you wish to assign to the new user.</li>
+		<li>Click <strong>Create User</strong>. </li>
+		<li>Close the Web Site Administration Tool. </li>
+	</ol>
+	<p>
+		To modify an existing member's role:</p>
+	<ol>
+		<li>In the <strong>Website</strong> menu, click <strong>ASP.NET Configuration</strong>.
+		</li>
+		<li>Click the <strong>Security</strong> tab.</li>
+		<li>Under <strong>Users</strong>, click <strong>Manage users</strong>. </li>
+		<li>In the user list, click <strong>Edit roles</strong> for the member. (If you do not see the member's name, use the search box.)</li>
+		<li>Under <strong>Roles</strong>, select the role to assign to the selected member.</li>
+		<li>Close the Web Site Administration Tool. </li>
+	</ol>
+
+	<hr />
+
+	<h2>Appendix B - Publishing Your Site</h2>
+	<p>
+		When you are ready to share the Web site with others, you can copy it to your Web server.
+		You need to know the File Transfer Protocol (FTP) address of your server, and if required, the user name and password assigned to you.</p>
+	<ol>
+		<li>In the <strong>Website</strong> menu, click <strong>Copy Web Site</strong>. The Copy Web Site tool displays the files from your Web site under <strong>Source Web Site</strong>.
+		</li>
+		<li>In the <strong>Connections</strong> list, select <strong>Connect to...</strong>. </li>
+		<li>In the <strong>Open Web Site</strong> dialog box, click the <strong>FTP Site</strong>
+			tab.</li>
+		<li>Type the FTP address of your server, and if required, the user name and password that your hosting site has provided.
+			The FTP URL usually has a format like this:<br />
+			<pre>ftp://ftp.servername/foldername</pre></li>
+		<li>Click <strong>Open</strong>. The files on the Web server are displayed under <strong>
+			Remote Web Site</strong>.
+			<p class="tip">
+				Note: If you have trouble connecting to the server, contact the server administrator.</p></li>
+		<li>In the <strong>Source Web site</strong> box, select all the files.</li>
+		<li>Click the <strong>Copy selected files from source to remote web site</strong> button.</li>
+	</ol>
+	<p>
+		The files from your site are copied to the server.</p>
+</body>
+</html>
