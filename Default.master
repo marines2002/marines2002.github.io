@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link rel="SHORTCUT ICON" href="images/flagsp.ico" /> 
+	<link href='http://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
+    <title>Whats on in Duloe Village Cornwall</title>
+    <meta name="verify-v1" content="CuepBxQU4EuQZ9Kwwc+/wX+m50KOqEVpfSXG3HtUQJE=" />
+    <meta name="description" content="Cornwall Hotels,Cornwall Holiday Cottages,Cornwall B&amp;B, Cornwall Campsites, Holidays in Cornwall,Duloe,Cornwall,Looe,Liskeard,St Keyne,Polperro,Fowey, restuarants, self-catering, apartments, walks, cycling, kayaking" />
+    <meta name="keywords" content="Holidays in Cornwall,Duloe,Cornwall,Looe,Liskeard,St Keyne,Polperro,Fowey, restuarants, self-catering, apartments, walks, cycling, kayaking" />
+ 
+     <link type="text/css" rel="Stylesheet" href="clubsite.css" />
+</head>
+<body>
+    <div id="poster">
+        <%--<h1>Duloe Village</h1>
+        <h2>
+            A Guide to whats on in and around Duloe 
+        </h2>--%>
+    </div>
+    <div class="none">
+        <a href="#content_start">Skip Repetitive Navigational Links</a></div>
+    <div id="navtop">
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+        <asp:Repeater ID="TopNavRepeat" runat="server" DataSourceID="SiteMapDataSource1">
+            <HeaderTemplate>
+                <ul>
+            </HeaderTemplate>
+            <ItemTemplate>
+                <li>
+                    <asp:HyperLink ID="HyperLink1" runat="server" Text='<%# Eval("Title") %>' NavigateUrl='<%# Eval("Url") %>'
+                        ToolTip='<%# Eval("Description") %>' />
+                </li>
+            </ItemTemplate>
+            <FooterTemplate>
+                </ul>
+            </FooterTemplate>
+        </asp:Repeater>
+        </div>
+       
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <div id="navbottom">
+         <asp:Repeater ID="BottomNavRepeat" runat="server" DataSourceID="SiteMapDataSource1">
+            <HeaderTemplate>
+                <ul>
+            </HeaderTemplate>
+            <ItemTemplate>
+                <li>
+                    <asp:HyperLink ID="HyperLink1" runat="server" Text='<%# Eval("Title") %>' NavigateUrl='<%# Eval("Url") %>'
+                        ToolTip='<%# Eval("Description") %>' />
+                </li>
+            </ItemTemplate>
+            <FooterTemplate>
+                </ul>
+            </FooterTemplate>
+        </asp:Repeater>
+    </div>
+    <div id="footer">
+         <p>
+            <a href="contact.aspx"> <b>Contact Us</b></a><br />
+            
+            </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Google Maps JavaScript API Example</title>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAATtG2BUFHqZIuXEXTstHR3RTKHZ4fR5uFE7AMCKPYHu_z80363RSDdm1wgYugQsTeuAX_Hh8w6rgUoQ&sensor=false" type="text/javascript"></script> 
+<script type="text/javascript"> 
+function initialize() 
+{ 
+    //if (GBrowserIsCompatible())
+    //{ 
+    // var map = new GMap2(document.getElementById("map_canvas")); 
+    // map.setCenter(new GLatLng(37.4419, -122.1419), 13); map.setUIToDefault();
+    //}
+    
+    var map;
+    
+    if (GBrowserIsCompatible())
+    {
+        var point = new GPoint(-4.487314224243,50.400913522263);
+        var marker = new GMarker(point);
+        var mapOptions = {googleBarOptions : 
+        { style : "new", adsOptions: 
+        { client: "2504325186034854", 
+          channel: "blog",
+          adsafe: "high",
+          language: "en" }}}  
+        
+        map = new GMap2(document.getElementById("map_canvas"), mapOptions);
+        map.setCenter(new GLatLng(50.400913522263, -4.487314224243), 11);
+        map.addOverlay(marker);
+        map.setUIToDefault();
+        map.enableGoogleBar();
+
+        
+        
+
+
+    }
+} 
+</script>
+</head> 
+<body bgcolor="#99C87A" onload="initialize()" onunload="GUnload()"> 
+
+           <div id="map_canvas" style="width: 100%; height: 450px">    
+       
+       </div>
+</body> 
+</html>
