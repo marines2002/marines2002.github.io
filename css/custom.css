@@ -156,6 +156,9 @@ section {
 #location .section-title {
   text-align: center;
 }
+#location1 .section-title {
+  text-align: center;
+}
 #contact .section-title {
   color: #f0f0f0;
 }
@@ -407,7 +410,60 @@ background: linear-gradient(120deg, #7b4397 , #dc2430); /* W3C, IE 10+/ Edge, Fi
     font-size: 16px;
 }
 
+/*-------------- Menu section --------------*/
+#location1{
+    background-color: #e4e4e4;
+}
 
+#location1 .media {
+      background: #fff;
+    margin-bottom: 30px;
+}
+
+#location1 .media-object{
+    padding: 0;
+}
+
+#location1 .media-object img {
+  width: 220px;
+  position: relative;
+  height: 300px;
+}
+
+#location1 .media-body {
+    padding: 20px;
+}
+
+#location1 .media-object span.menu-price {
+  position: absolute;
+  background-color: #ffffff;
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 20px;
+  top: 50%;
+  left: 3%;
+}
+
+#location1 h2{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+#location1 h3 {
+   color: #555;
+    font-size: 32px;
+}
+
+#location1 p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#location1 .btn{
+    padding: 7px 30px;
+    font-size: 16px;
+}
 /*-------------- Hotels section --------------*/
 #hotels .gallery-thumb {
   position: relative;
