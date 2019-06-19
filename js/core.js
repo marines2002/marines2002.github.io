@@ -125,11 +125,11 @@ $(document).ready(function() {
     -----------------------------------------------*/
   function initParallax() {
     $('#about').parallax("100%", 0.1);
+    $('#location').parallax("100%", 0.3);
+    $('#location1').parallax("100%", 0.3);
     $('#todo').parallax("100%", 0.3);
     $('#about').parallax("100%", 0.1);
     $('#video-sec').parallax("100%", 0.2);
-    $('#location').parallax("100%", 0.3);
-    $('#location1').parallax("100%", 0.3);
     $('#team').parallax("100%", 0.3);
     $('#hotels').parallax("100%", 0.1);
     $('#contact').parallax("100%", 0.2);
