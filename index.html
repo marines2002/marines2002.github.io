@@ -271,15 +271,15 @@
 
      <div class="overlay"></div>
     <div class="container">
-      <!-- div class="row">
+      <div class="row">
 
           <div class="col-md-offset-2 col-md-8 col-sm-12">
               <h2 class="wow fadeInUp" data-wow-delay="0.5s">Watch the video<small>All journeys have secret destinations of which the traveler is unaware.</small></h2>
-              <a class="popup-youtube" href="https://www.youtube.com/watch?v=AQ6GmpMu5L8" ><i class="fa fa-play"></i></a>
-              <small><em>Video by: Paris Vacation Travel Guide | Expedia</em></small>
+              <a class="popup-youtube" href="https://www.youtube.com/watch?time_continue=53&v=xMM-rduVNnU" ><i class="fa fa-play"></i></a>
+              <small><em>Video by: Visit Cornwall</em></small>
           </div>
 
-      </div> -->
+      </div>
       </div>
 </section>
 
@@ -413,35 +413,27 @@
  
 	<div class="container form-block">
            <div class="row">
-              <form action="https://formspree.io/nigel.charlton@gmail.com"
-              method="POST">
-            <div class="row uniform">
-                    <div class="4u 12u$(xsmall)">
-                      <input type="text" name="name" id="name" value="" placeholder="Name" />
-                    </div>
-                    <div class="4u 12u$(xsmall)">
-                      <input type="email" name="email" id="email" value="" placeholder="Email" />
-                    </div>
-                    <div class="4u$ 12u$(xsmall)">
-                      <input type="text" name="phone" id="phone" value="" placeholder="Contact Number" />
-                    </div>
-                    <div class="12u$">
-                      <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-                    </div>
-                    <!-- Break -->
-                    <div class="12u$">
-                      <ul class="actions">
-                        <li><input type="submit" value="Send Message" class="special" /></li>
-                        <li><input type="reset" value="Reset" /></li>
-                      </ul>
-                    </div>
-                  </div>
-            </form>
+              <div class="col-lg-12 text-center"><h2>Get in Touch<small>Stay in touch for more information</small></h2></div>
+              
+              
+              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                  <label for="email-address">Email Address</label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                  <label for="message">Message</label>
+                  <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
+              </form>
 
 
            </div>
                 <div class="row">
                 <div class="col-lg-12 text-center"><h2>Get in Touch<small>Stay in touch for more information</small></h2></div>
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post"></form>
 				<div class="col-lg-4 col-md-4 col-sm-12">
                 <span class="input input-hoshi">
 					<input class="input_field input_field-hoshi" type="text" id="input-4" />
@@ -471,12 +463,13 @@
                 <span class="t-area input-hoshi">
                 <textarea class="input_field input_field-hoshi" rows="1"></textarea>
 						<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">Email</span>
+						<span class="input_label-content input_label-content-hoshi">Message</span>
 					</label>
 				</span>
-                <a href="#" class="btn btn-capsul btn-transparent-white">Submit</a>
+                <!-- <a href="#" class="btn btn-capsul btn-transparent-white">Submit</a> -->
+                <input class="btn btn-capsul btn-transparent-white" type="submit" value="Submit">
                 </div>
-                
+              </form>
                 </div>
                 </div>
 </section>
