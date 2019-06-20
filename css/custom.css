@@ -309,7 +309,7 @@ background: linear-gradient(120deg, #7b4397 , #dc2430); /* W3C, IE 10+/ Edge, Fi
 
 /*-------------- Video section  --------------*/
 #video-sec {
-  background: url('../images/video-bg.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/looe-pano.png') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
