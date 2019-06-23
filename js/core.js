@@ -128,6 +128,7 @@ $(document).ready(function() {
     $('#location').parallax("100%", 0.3);
     $('#location1').parallax("100%", 0.3);
     $('#todo').parallax("100%", 0.3);
+    $('#social').parallax("100%", 0.3);
     $('#about').parallax("100%", 0.1);
     $('#video-sec').parallax("100%", 0.2);
     $('#team').parallax("100%", 0.3);

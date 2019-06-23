@@ -307,6 +307,45 @@ background: linear-gradient(120deg, #7b4397 , #dc2430); /* W3C, IE 10+/ Edge, Fi
 
 
 
+/*-------------- Social section --------------*/
+#social .feature-thumb {
+  background-color: #ffffff;
+  position: relative;
+  padding: 40px;
+  margin-top: 32px;
+  text-align: center;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.14);
+}
+#social .feature-icon {
+  
+  width: 85px;
+  height: 85px;
+  top: 0;
+  margin: 0 auto 30px;
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  display: table;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+#social h3 {
+  padding-top: 14px;
+  padding-bottom: 10px;
+}
+
+#social p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+
+
 /*-------------- Video section  --------------*/
 #video-sec {
   background: url('../images/looe-pano.png') 50% 0 repeat-y fixed;
